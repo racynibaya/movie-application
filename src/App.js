@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from 'react';
 
-function App() {
+import { MoviesContext } from './contexts/movies.context';
+import './App.css';
+import MovieCard from './components/movie-card/movie-card.component';
+import Search from './components/search/search.component';
+
+const App = () => {
+  const { movies } = useContext(MoviesContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='logo'>
+        <div>
+          {' '}
+          <span>Racyn.</span>
+        </div>
+      </div>
+      <div className='app'>
+        <h1>Movie Land: React</h1>
+        <Search />
+
+        <div className='container'>
+          {movies && movies.length > 0 ? (
+            movies.map(movie => <MovieCard movie={movie} key={movie.Title} />)
+          ) : (
+            <div className='empty'>
+              <h2>No movies found</h2>
+            </div>
+          )}
+        </div>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
