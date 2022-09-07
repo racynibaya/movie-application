@@ -1,20 +1,22 @@
 import { useContext } from 'react';
 
 import { MoviesContext } from '../../contexts/movies.context';
-import { ReactComponent as SearchIcon } from '../../assets/search.svg';
+
+import { SearchContainer, SearchInput, SearchIcon } from './search.styles';
+
 const Search = () => {
   const { searchField, setSearchField, searchMovies } =
     useContext(MoviesContext);
 
   return (
-    <div className='search'>
-      <input
+    <SearchContainer>
+      <SearchInput
         placeholder='Search For movies'
         value={searchField}
         onChange={e => setSearchField(e.target.value)}
       />
       <SearchIcon onClick={() => searchMovies(searchField)} />
-    </div>
+    </SearchContainer>
   );
 };
 

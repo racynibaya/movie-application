@@ -1,21 +1,31 @@
+import {
+  MovieCardContainer,
+  YearContainer,
+  ImageContainer,
+  Image,
+  MovieInformationContainer,
+  TypeContainer,
+  TitleContainer,
+} from './movie-card.styles';
+
 const MovieCard = ({ movie }) => {
   const { Year, Poster, Title, Type } = movie;
   return (
-    <div className='movie'>
-      <div>
+    <MovieCardContainer>
+      <YearContainer>
         <p>{Year}</p>
-      </div>
-      <div>
-        <img
+      </YearContainer>
+      <ImageContainer>
+        <Image
           src={Poster !== 'N/A' ? Poster : 'https://via.placeholder.com/400'}
           alt={Title}
         />
-      </div>
-      <div>
-        <span>{Type}</span>
-        <h3>{Title}</h3>
-      </div>
-    </div>
+      </ImageContainer>
+      <MovieInformationContainer>
+        <TypeContainer>{Type}</TypeContainer>
+        <TitleContainer>{Title}</TitleContainer>
+      </MovieInformationContainer>
+    </MovieCardContainer>
   );
 };
 
