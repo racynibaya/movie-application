@@ -60,6 +60,7 @@ export const MovieCardContainer = styled.div`
   &:hover {
     box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
     transform: scale(1.05, 1.05);
+    cursor: pointer;
 
     ${ImageContainer} {
       height: 100%;
