@@ -21,6 +21,7 @@ export const MovieApplicationContainer = styled.div`
 export const MainTitle = styled.h1`
   font-family: 'Permanent Marker', cursive;
   font-size: 4rem;
+  margin-top: 30px;
 
   letter-spacing: 5px;
   background: linear-gradient(
@@ -38,7 +39,7 @@ export const MainTitle = styled.h1`
 
 export const SubTitle = styled.span`
   color: #fff;
-  font-size: 75px;
+  font-size: 4.5rem;
 `;
 
 export const MovieWrapper = styled.div`

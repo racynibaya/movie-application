@@ -12,7 +12,7 @@ const Movie = ({ movies }) => {
     <MovieWrapper>
       <MovieApplicationContainer>
         <MainTitle>
-          Nex<SubTitle>tflix</SubTitle>
+          Next<SubTitle>flix</SubTitle>
         </MainTitle>
         <Search />
 

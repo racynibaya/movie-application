@@ -1,11 +1,13 @@
-import { LogoContainer } from './logo.styles';
+import { LogoContainer, Cyn } from './logo.styles';
 
 const Logo = () => {
   return (
     <LogoContainer>
       <div>
         {' '}
-        <span>Racyn.</span>
+        <span>
+          Ra<Cyn>cyn.</Cyn>
+        </span>
       </div>
     </LogoContainer>
   );
