@@ -2,6 +2,7 @@ import Search from '../search/search.component';
 import MovieCardList from '../movie-card-list/movie-card-list.component';
 import {
   MainTitle,
+  SubTitle,
   MovieApplicationContainer,
   MovieWrapper,
 } from './movie.styles';
@@ -10,7 +11,9 @@ const Movie = ({ movies }) => {
   return (
     <MovieWrapper>
       <MovieApplicationContainer>
-        <MainTitle>Movie Land: React</MainTitle>
+        <MainTitle>
+          Nex<SubTitle>tflix</SubTitle>
+        </MainTitle>
         <Search />
 
         <MovieCardList movies={movies} />

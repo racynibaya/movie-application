@@ -19,17 +19,26 @@ export const MovieApplicationContainer = styled.div`
 `;
 
 export const MainTitle = styled.h1`
-  font-size: 3rem;
-  letter-spacing: 0.9px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4rem;
+
+  letter-spacing: 5px;
   background: linear-gradient(
     90deg,
     rgba(249, 211, 180, 1) 0%,
     rgba(249, 211, 180, 0) 100%
   );
+  color: red;
+  text-transform: uppercase;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: fit-content;
+  /* -webkit-text-fill-color: transparent; */
+  /* width: fit-content; */
+`;
+
+export const SubTitle = styled.span`
+  color: #fff;
+  font-size: 75px;
 `;
 
 export const MovieWrapper = styled.div`

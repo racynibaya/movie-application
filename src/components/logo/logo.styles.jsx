@@ -5,5 +5,5 @@ export const LogoContainer = styled.div`
   margin: 30px 0 20px 200px;
   font-size: 3rem;
   font-family: 'Alfa Slab One', cursive;
-  color: rgba(249, 211, 180, 1);
+  color: #ff0000;
 `;
